@@ -38,11 +38,11 @@ export default function Sidebar({ activeTab, setActiveTab, semesterRiskScore, th
       {/* Upper Brand Section */}
       <div className="p-6">
         <div className="flex items-center gap-3 p-2 bg-slate-900/50 rounded-xl border border-slate-800/80">
-          <div className="p-2.5 bg-cyan-500/10 text-cyan-400 rounded-lg border border-cyan-500/20 shadow-inner">
+          <div className="p-2.5 bg-yellow-500/10 text-yellow-500 rounded-lg border border-yellow-500/20 shadow-inner">
             <Brain size={24} className="animate-pulse" />
           </div>
           <div>
-            <h1 className="font-display font-bold text-base text-slate-100 tracking-tight leading-4">Academic Twin</h1>
+            <h1 className="font-display font-bold text-base text-yellow-500 tracking-widest leading-4 uppercase">Academic Twin</h1>
             <p className="text-[10px] font-mono text-slate-400 mt-1 uppercase tracking-wider">v1.4 • Student Brain Sync</p>
           </div>
         </div>
@@ -60,11 +60,11 @@ export default function Sidebar({ activeTab, setActiveTab, semesterRiskScore, th
                 onClick={() => setActiveTab(item.id)}
                 className={`w-full flex items-center gap-3.5 px-4 py-3 rounded-xl text-left border transition-all duration-200 cursor-pointer ${
                   isActive 
-                    ? 'bg-slate-900 border-indigo-500/40 text-slate-100 font-medium shadow-md shadow-indigo-950/20' 
+                    ? 'bg-amber-950/20 border-yellow-600/40 text-yellow-500 font-medium shadow-md shadow-amber-950/30' 
                     : 'bg-transparent border-transparent text-slate-400 hover:text-slate-200 hover:bg-slate-900/50 hover:border-slate-800/60'
                 }`}
               >
-                <Icon size={18} className={isActive ? 'text-indigo-400' : 'text-slate-500'} />
+                <Icon size={18} className={isActive ? 'text-yellow-500' : 'text-slate-500'} />
                 <span className="text-sm font-sans tracking-wide">{item.name}</span>
                 {item.id === 'semester-manager' && semesterRiskScore > 50 && (
                   <div className="ml-auto w-2 h-2 rounded-full bg-amber-500 animate-ping" />
@@ -87,7 +87,7 @@ export default function Sidebar({ activeTab, setActiveTab, semesterRiskScore, th
           >
             {theme === 'dark' ? (
               <>
-                <Moon size={13} className="text-cyan-400 animate-pulse" />
+                <Moon size={13} className="text-yellow-500 animate-pulse" />
                 <span className="font-mono text-[10px]">Deep Space</span>
               </>
             ) : (
@@ -104,7 +104,7 @@ export default function Sidebar({ activeTab, setActiveTab, semesterRiskScore, th
       <div className="p-5 border-t border-slate-900 bg-slate-950">
         <div className="p-4 bg-slate-900/40 rounded-xl border border-slate-900">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center border border-indigo-500/30">
+            <div className="w-9 h-9 rounded-full bg-yellow-500/10 text-yellow-500 flex items-center justify-center border border-yellow-500/20">
               <GraduationCap size={18} />
             </div>
             <div>
