@@ -1,6 +1,8 @@
  🧠 Academic Twin
 
 Academic Twin is an advanced AI-powered educational ecosystem that maintains a synchronized, live digital model of a student's cognitive state. By tracking what you know, what you *think* you know, and what you’ve forgotten, Academic Twin acts as a personalized co-pilot to optimize your learning velocity and maximize your academic potential.
+
+
 Here's link to our model:
 https://academictwin.onrender.com/
 ---
