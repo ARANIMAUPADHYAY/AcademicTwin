@@ -1,0 +1,8 @@
+{
+  "name": "Academic Twin",
+  "description": "A digital version of the student's academic brain that tracks learning state, assesses confidence gaps, simulates Vivas, and manages semester risk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
