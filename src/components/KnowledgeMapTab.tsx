@@ -97,8 +97,8 @@ export default function KnowledgeMapTab({
           {/* SVG Map Linkage */}
           <div className="h-64 my-6 flex items-center justify-center relative z-10 w-full">
             {/* Center Hub */}
-            <div className="absolute w-28 h-28 rounded-full border border-slate-800 bg-slate-900/90 flex flex-col items-center justify-center text-center shadow-lg shadow-indigo-950/20">
-              <span className="text-[10px] font-mono text-indigo-400 uppercase tracking-widest leading-3 font-semibold mb-1">Hub Root</span>
+            <div className="absolute w-28 h-28 rounded-full border border-slate-800 bg-slate-900/90 flex flex-col items-center justify-center text-center shadow-lg shadow-amber-950/30">
+              <span className="text-[10px] font-mono text-yellow-500 uppercase tracking-widest leading-3 font-semibold mb-1">Hub Root</span>
               <span className="font-display font-black text-slate-100 text-lg leading-4 tracking-tight">{selectedSubject}</span>
               <span className="text-[9px] text-slate-500 mt-1">{subjectData.topics.length} Nodes</span>
             </div>
@@ -135,9 +135,9 @@ export default function KnowledgeMapTab({
                 bgClr = 'bg-slate-950/90';
                 glowColorClass = 'text-rose-400';
               } else {
-                borderClr = 'border-slate-700/80 hover:border-indigo-500/80';
+                borderClr = 'border-yellow-600/30 hover:border-yellow-500/50';
                 bgClr = 'bg-slate-950/90';
-                glowColorClass = 'text-indigo-400';
+                glowColorClass = 'text-yellow-500';
               }
 
               return (
@@ -226,7 +226,7 @@ export default function KnowledgeMapTab({
                         max="10" 
                         value={tempConfidence}
                         onChange={(e) => setTempConfidence(parseInt(e.target.value))}
-                        className="w-full h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-indigo-500"
+                        className="w-full h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-[#C8A15A]"
                       />
                     </div>
 

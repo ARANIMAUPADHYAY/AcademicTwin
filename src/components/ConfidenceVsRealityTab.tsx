@@ -192,14 +192,14 @@ export default function ConfidenceVsRealityTab({
                   <span className="text-violet-400 font-bold">{ratedConfidence}/10</span>
                 </div>
                 <div className="bg-slate-950 border border-slate-800 p-4 rounded-xl flex items-center gap-4">
-                  <input
-                    type="range"
-                    min="1"
-                    max="10"
-                    value={ratedConfidence}
-                    onChange={(e) => setRatedConfidence(parseInt(e.target.value))}
-                    className="w-full h-1.5 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-violet-500"
-                  />
+                      <input
+                        type="range"
+                        min="1"
+                        max="10"
+                        value={ratedConfidence}
+                        onChange={(e) => setRatedConfidence(parseInt(e.target.value))}
+                        className="w-full h-1.5 bg-slate-850 bg-slate-800 rounded-lg appearance-none cursor-pointer accent-[#C8A15A]"
+                      />
                 </div>
               </div>
 
